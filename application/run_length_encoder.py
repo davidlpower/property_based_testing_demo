@@ -3,8 +3,8 @@ class RunLengthEncoder:
     def encode(self, input_string):
         print("Start: Encoding")
         # Demo 1
-        if not input_string:
-            return []
+        # if not input_string:
+        #     return []
 
         count = 1
         prev = ''
