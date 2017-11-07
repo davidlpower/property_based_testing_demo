@@ -20,7 +20,3 @@ class TestEncoding(unittest.TestCase):
     ])
     def test_decode_inverts_encode(self, name, input):
         self.assertEqual(self.runLength.decode(self.runLength.encode(input)), input)
-
-
-if __name__ == '__main__':
-    unittest.main()

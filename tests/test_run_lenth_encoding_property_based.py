@@ -11,7 +11,3 @@ class TestEncoding(unittest.TestCase):
     @given(input=st.text())
     def test_decode_inverts_encode(self, input):
         self.assertEqual(self.runLength.decode(self.runLength.encode(input)), input)
-
-
-if __name__ == '__main__':
-    unittest.main()
