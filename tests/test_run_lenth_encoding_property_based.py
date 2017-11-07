@@ -8,9 +8,9 @@ class TestEncoding(unittest.TestCase):
     def setUpClass(cls):
         cls.runLength = RunLengthEncoder()
 
-    @given(s=st.text())
-    def test_decode_inverts_encode(self, s):
-        self.assertEqual(self.runLength.decode(self.runLength.encode(s)), s)
+    @given(input=st.text())
+    def test_decode_inverts_encode(self, input):
+        self.assertEqual(self.runLength.decode(self.runLength.encode(input)), input)
 
 
 if __name__ == '__main__':

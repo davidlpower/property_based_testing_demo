@@ -12,10 +12,10 @@ class TestEncoding(unittest.TestCase):
 
     @parameterized.expand([
         ("single char", 'a'),
-        ("multiple duplicate chars", 'aaa'),
+        ("duplicate chars", 'aaa'),
         ("multiple chars", 'abc'),
         ("single special chars", '('),
-        ("multiple special chars", '(('),
+        ("duplicate special chars", '(('),
         ("multiple special chars", '(&#'),
     ])
     def test_decode_inverts_encode(self, name, input):
