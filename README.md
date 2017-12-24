@@ -10,7 +10,7 @@ In this demo the property-based testing library used was [Hypothesis](http://hyp
 
 # Getting Started
 First, you'll need to make sure you have a few Python modules installed
-```pip install paramterized hypothesis```
+```pip install parameterized hypothesis```
 
 Next, make sure your ```$PYTHONPATH``` is pointed to the root directory of this project
 
